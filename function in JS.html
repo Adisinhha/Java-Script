@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funtion in java script</title>
+</head>
+<div id="asd">The avg of given number is follows</div>
+<div id="asd1">The avg of given number is follows</div>
+<div id="asd2">The avg of given number is follows</div>
+<script type="text/javascript">
+	function avg2num(x,y) {
+		//document.write("Done")
+		return Math.round(x+y)/2
+	}
+	let a = 33;
+	let b = 74;
+	let c = 65;
+	// document.write("Average of two number a and b is",avg2num(a,b))
+	// document.write("Average of two number c and b is",avg2num(c,b))
+//document.write("Average of two number a and c is",avg2num(a,c))
+document.getElementById('asd').innerHTML = "Average of two Num" +a+ "," +b+ " is " +avg2num(a,b);
+document.getElementById('asd1').innerHTML = "Average of two Num" +a+ "," +c+ " is " +avg2num(a,c);
+document.getElementById('asd2').innerHTML = "Average of two Num" +c+ "," +b+ " is " +avg2num(c,b);
+
+</script>
+<body>
+
+</body>
+</html>
+	

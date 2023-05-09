@@ -1,0 +1,83 @@
+* {
+  margin: 1rem 0 0 0;
+  padding: 0px;
+}
+.main {
+  height: 1068px;
+  width: 1024px;
+  margin-left: 15rem;
+}
+.qsd{
+background-image: url("ggsestc.png");
+}
+.header {
+  height: 140px;
+  text-align: center;
+  background-color: rgb(152, 237, 252);
+  font-family: arial;
+}
+.header h1 {
+  /* padding-top:35px; */
+  color: rgb(218, 60, 113);
+  text-align: center;
+  align-self: center;
+}
+.heading {
+  padding: 3.5rem;
+}
+input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border-color: aqua;
+  align-items: center;
+  margin-left: 2rem;
+}
+button {
+  margin: 0.3rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border-color: aqua;
+  background-color: green;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.content {
+  background-color: bisque;
+  height: 600px;
+  /* margin-top: -2rem; */
+}
+
+.content h2 {
+  font-size: 25px;
+  color: rgb(244, 14, 14);
+  /* padding-left: 100px; */
+  margin-left: 20rem;
+  padding-top: 1rem;
+  margin-bottom: -1.5rem;
+  /* padding-top:50px; */
+}
+table {
+  /* width: 700px; */
+  /* margin: auto; */
+  margin-top: 50px;
+  border-radius: 0.5rem;
+  margin-left: -12rem;
+}
+table,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 20px;
+ 
+}
+
+th {
+  background-color: rgb(184, 228, 184);
+  padding: 1rem;
+}
+td {
+  text-align: center;
+  padding: 10px;
+}

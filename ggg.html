@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game</title>
+	<style>#game {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+#score {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#game-board {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  margin: 0 auto;
+  position: relative;
+}
+.block {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border: 1px solid black;
+  position: absolute;
+}
+</style>
+
+<script>
+	const gameBoard = document.getElementById("game-board");
+const scoreNumber = document.getElementById("score-number");
+let score = 0;
+
+function startGame() {
+  // set up game board and add event listeners to blocks
+  for (let i = 0; i < 16; i++) {
+    const block = document.createElement("div");
+    block.classList.add("block");
+    block.addEventListener("click", handleClick);
+    gameBoard.appendChild(block);
+  }
+
+  // shuffle blocks
+  shuffleBlocks();
+}
+
+function shuffleBlocks() {
+  const blocks = document.querySelectorAll(".block");
+  for (let i = 0; i < blocks.length; i++) {
+    const top = Math.floor(Math.random() * 401);
+    const left = Math.floor(Math.random() * 401);
+    blocks[i].style.top = `${top}px`;
+    blocks[i].style.left = `${left}px`;
+  }
+}
+
+function handleClick() {
+  this.style.display = "none";
+  score++;
+  scoreNumber.textContent = score;
+}
+
+document.getElementById("start-button").addEventListener("click", startGame);
+</script>
+</head>
+<body>
+<div id="game">
+  <div id="score">Score: <span id="score-number">0</span></div>
+  <button id="start-button">Start Game</button>
+  <div id="game-board"></div>
+</div>
+
+</body>
+</html>

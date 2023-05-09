@@ -1,0 +1,23 @@
+@echo off
+
+title chatroom
+  
+:join
+
+cls
+color a
+echo chatroom
+set /p username= Enter Your Name:
+echo %username% Joined! >> chat
+goto chatroom
+pause
+
+:chatroom
+cls
+color a
+echo chatroom
+type chat
+set /p Input= Say Something or Press Enter to Refresh:
+echo %username%: %Input% >> chat
+goto chatroom
+pause
